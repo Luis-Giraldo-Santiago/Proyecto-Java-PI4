@@ -1,0 +1,12 @@
+\ Model _copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ a0: x_0 + x_1 >= 1
+ a4: x_2 + x_3 >= 1
+ b0: x_0 + x_1 + x_2 + x_3 <= 1
+Bounds
+Binaries
+ x_0 x_1 x_2 x_3
+End

@@ -1,0 +1,23 @@
+head section
+
+Double getPorcentajeTipo(Integer i, Integer j)
+Integer getCantidad(Integer i)
+Integer getBeneficio(Integer j)
+Integer getN()
+Integer getM()
+
+Integer n = getN()
+Integer m = getM()
+
+goal section
+
+max sum(getBeneficio(j) x[j], j in 0 .. m)
+
+constraints section
+
+sum(getPorcentajeTipo(i,j) x[i], i in 0 .. m) <= getCantidad(j), j in 0 .. n
+
+
+int
+
+x[i], i in 0 .. m
